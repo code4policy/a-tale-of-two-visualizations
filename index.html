@@ -7,8 +7,13 @@
 
 <body>
 <div class="chart" id="apple-stock-chart"></div>
+<div class="chart" id="google-stock-chart"></div>
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="main.js"></script>
+<script>
+	makeChart("#apple-stock-chart", "apple-data.tsv")
+	makeChart("#google-stock-chart", "google-data.tsv")
+</script>
 </body>
 
 </html>

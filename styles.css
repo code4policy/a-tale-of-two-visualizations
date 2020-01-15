@@ -2,29 +2,43 @@ body {
   font: 10px sans-serif;
 }
 
-.axis path,
-.axis line {
+.chart .axis path,
+.chart .axis line {
   fill: none;
   stroke: #000;
   shape-rendering: crispEdges;
 }
 
-.x.axis path {
+.chart .x.axis path {
   display: none;
 }
 
-.line {
+.chart .line {
   fill: none;
   stroke: steelblue;
   stroke-width: 1.5px;
 }
 
-.overlay {
+.chart .overlay {
   fill: none;
   pointer-events: all;
 }
 
-.focus circle {
+.chart .focus circle {
   fill: none;
   stroke: steelblue;
+}
+
+#apple-stock-chart .line {
+  stroke: green;
+}
+
+#google-stock-chart .line {
+  stroke: red;
+}
+
+.chart {
+  border: solid black 1px;
+  width: 960px;
+  margin-bottom: 10px;
 }
